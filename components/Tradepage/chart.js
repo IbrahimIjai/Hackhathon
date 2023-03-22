@@ -53,16 +53,16 @@ export default function TradingViewWidget() {
   }, []);
 
   return (
-    <div className="tradingview-widget-container">
-      <div id="tradingview_4ccd6" />
-      <div className="tradingview-widget-copyright">
-        <Link
-          href="https://www.tradingview.com/symbols/BTCUSD/?exchange=BITSTAMP"
-          rel="noopener"
-          target="_blank">
-          <span className="blue-text">Bitcoin chart</span>
-        </Link>{" "}
-        by TradingView
+    <div style={{position:"relative", width:"100%", overflow:"hidden"}}>
+      <div className="tradingview-widget-container">
+        <div id="tradingview_4ccd6" />
+          <Link
+            href="https://www.tradingview.com/symbols/BTCUSD/?exchange=BITSTAMP"
+            rel="noopener"
+            target="_blank">
+            <span className="blue-text">Bitcoin chart</span>
+          </Link>{" "}
+         
       </div>
     </div>
   );

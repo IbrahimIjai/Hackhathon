@@ -107,3 +107,7 @@ a {
     color-scheme: dark;
   }
 }
+.chartview {
+  height: 100vh;
+  width:80vw;
+}
