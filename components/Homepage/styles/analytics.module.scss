@@ -1,0 +1,65 @@
+.container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 2rem;
+    background-color: #262626;
+    flex-direction: column;
+    width: 80%;
+    border-radius: 20px;
+    gap: 2rem;
+    @media (min-width: 900px) {
+      flex-direction: row;
+    }
+    .tvl {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem 0;
+        .trade{
+            padding-bottom: 1rem;
+            border-bottom: .5px solid black;
+        }
+      h2 {
+        color: #fff;
+      }
+      p{
+        color: gray;
+        font-size: .8rem;
+      }
+      @media (min-width: 900px) {
+        border-right: 0.5px solid black;
+        width: 50%;
+      }
+    }
+    .ads {
+      background-color: #3c3a3a;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+      h3{
+        color: #fff;
+        span{
+            color: rgb(41, 220, 127);;
+        }
+      }
+      p{
+        text-align: center;
+        color: gray;
+        padding: .5rem;
+      }
+      @media (min-width: 900px) {
+        width: 50%;
+      }
+    }
+  }
+}

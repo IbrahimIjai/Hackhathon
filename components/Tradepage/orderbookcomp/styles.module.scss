@@ -1,0 +1,17 @@
+.container{
+    border: .5px solid gray;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    .header{
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .orders{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,81 @@
+.container {
+  color: #fff;
+  padding: 0 5vw;
+  padding-top: 10vh;
+
+  .header {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    input {
+      background-color: transparent;
+      outline: none;
+      color: gray;
+      border: 0.5px solid rgb(3, 97, 3);
+      padding: 0.2rem 1rem;
+      border-radius: 8px;
+    }
+  }
+  .img_logo {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    border: 0.5px solid gray;
+    border-radius: 12px;
+  }
+  .img_chart {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 12px;
+  }
+
+  .cardcontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    align-items: stretch;
+    justify-content: center;
+    @media (min-width: 900px) {
+      align-items: baseline;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .card {
+      padding: 2rem 1rem;
+      border: 0.5px solid green;
+      border-radius: 20px;
+      .cardhead {
+        display: flex;
+        gap: 1rem;
+      }
+      .chartcontainer {
+        padding: 0 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+      }
+    }   
+    .btn{
+        position: relative;
+        width: 100%;        
+        display: flex;
+        padding: 1.5rem;
+    }
+  }
+
+  button {
+    position: absolute;
+    right: 10px;
+    float: right;
+    background-color: rgb(41, 220, 127);
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+}
